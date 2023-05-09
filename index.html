@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
     <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <input type="text"><br>
-        <button>Find corresponding sequence for RNA</button>
-        <button>Find corresponding sequence for DNA</button>
+    <div>
+        <input id="main" type="text"><br>
+        <button id="RNA" onclick="RNA()">Find corresponding sequence for RNA</button>
+        <button id="DNA" onclick="DNA()">Find corresponding sequence for DNA</button>
     </div>
-    <h1 class="result"></h1>
+    <h1 id="result"> </h1>
 </body>
 </html>
