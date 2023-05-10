@@ -1,5 +1,3 @@
-//todo add exception for lowercase
-
 function RNA () {
 
     let x = ''
@@ -7,16 +5,16 @@ function RNA () {
 
     for (let i of document.getElementById('main').value) {
         switch (i) {
-            case 'A':
+            case 'A' || 'a':
                 x += 'U';
                 break;
-            case 'T':
+            case 'T' || 't':
                 x += 'A'
                 break;
-            case 'C':
+            case 'C' || 'c':
                 x += 'G'
                 break;
-            case 'G':
+            case 'G' || 'g':
                 x += 'C'
                 break;
 
