@@ -1,20 +1,22 @@
+//todo uppercase the input
+
 function RNA () {
 
     let x = ''
     let result = document.getElementById('result')
 
-    for (let i of document.getElementById('main').value) {
+    for (let i of document.getElementById('main').value.toUpperCase()) {
         switch (i) {
-            case 'A' || 'a':
+            case 'A':
                 x += 'U';
                 break;
-            case 'T' || 't':
+            case 'T':
                 x += 'A'
                 break;
-            case 'C' || 'c':
+            case 'C':
                 x += 'G'
                 break;
-            case 'G' || 'g':
+            case 'G':
                 x += 'C'
                 break;
 
@@ -34,7 +36,7 @@ function DNA (){
     let x = ''
     let result = document.getElementById('result')
 
-    for (let i of document.getElementById('main').value) {
+    for (let i of document.getElementById('main').value.toUpperCase()) {
         switch (i) {
             case 'A':
                 x += 'T';
