@@ -19,6 +19,23 @@
     justify-content: center;
     align-items: center;
     width: 40vw;
+    margin: 5px;
+}
+
+#main {
+    width: 70vw;
+    height: 2.5vh;
+    text-transform:uppercase;
+}
+
+.buton {
+    display: flex;
+}
+
+button {
+    margin: 2px;
+    border-radius: 25px;
+    padding: 5px;
 }
 
 #result {

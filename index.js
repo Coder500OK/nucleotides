@@ -5,7 +5,7 @@ function RNA () {
     let x = ''
     let result = document.getElementById('result')
 
-    for (let i of document.getElementById('main').value.toUpperCase()) {
+    for (let i of document.getElementById('main').value) {
         switch (i) {
             case 'A':
                 x += 'U';
@@ -37,7 +37,7 @@ function DNA (){
     let x = ''
     let result = document.getElementById('result')
 
-    for (let i of document.getElementById('main').value.toUpperCase()) {
+    for (let i of document.getElementById('main').value) {
         switch (i) {
             case 'A':
                 x += 'T';
