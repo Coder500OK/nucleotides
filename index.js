@@ -22,6 +22,7 @@ function RNA () {
 
             default:
                 alert('You messed up')
+                location.reload()
                 break;
         }
 
@@ -53,6 +54,7 @@ function DNA (){
 
             default:
                 alert('You messed up')
+                location.reload()
                 break;
         }
 
