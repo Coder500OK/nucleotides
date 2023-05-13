@@ -1,64 +1,69 @@
-//todo uppercase the input
+document.addEventListener("DOMContentLoaded", () => {
 
-function RNA () {
-
-    let x = ''
     let result = document.getElementById('result')
 
-    for (let i of document.getElementById('main').value.toUpperCase()) {
-        switch (i) {
-            case 'A':
-                x += 'U';
-                break;
-            case 'T':
-                x += 'A'
-                break;
-            case 'C':
-                x += 'G'
-                break;
-            case 'G':
-                x += 'C'
-                break;
+    function RNA () {
 
-            default:
-                alert('You messed up')
-                location.reload()
-                break;
+        let x = ''
+    
+        for (let i of document.getElementById('main').value.toUpperCase()) {
+            switch (i) {
+                case 'A':
+                    x += 'U';
+                    break;
+                case 'T':
+                    x += 'A'
+                    break;
+                case 'C':
+                    x += 'G'
+                    break;
+                case 'G':
+                    x += 'C'
+                    break;
+    
+                default:
+                    alert('You messed up')
+                    location.reload()
+                    break;
+            }
+    
+            result.innerHTML = x;
+    
         }
-
-        result.innerHTML = x;
-
     }
-}
-
-function DNA (){
-
-
-    let x = ''
-    let result = document.getElementById('result')
-
-    for (let i of document.getElementById('main').value.toUpperCase()) {
-        switch (i) {
-            case 'A':
-                x += 'T';
-                break;
-            case 'T':
-                x += 'A'
-                break;
-            case 'C':
-                x += 'G'
-                break;
-            case 'G':
-                x += 'C'
-                break;
-
-            default:
-                alert('You messed up')
-                location.reload()
-                break;
+    
+    function DNA (){
+    
+    
+        let x = ''
+    
+        for (let i of document.getElementById('main').value.toUpperCase()) {
+            switch (i) {
+                case 'A':
+                    x += 'T';
+                    break;
+                case 'T':
+                    x += 'A'
+                    break;
+                case 'C':
+                    x += 'G'
+                    break;
+                case 'G':
+                    x += 'C'
+                    break;
+    
+                default:
+                    alert('You messed up')
+                    location.reload()
+                    break;
+            }
+    
+            result.innerHTML = x;
+    
         }
-
-        result.innerHTML = x;
-
     }
-}
+
+    document.querySelector("#RNA").addEventListener('click', () => RNA())
+    document.querySelector("#DNA").addEventListener('click', () => DNA())
+
+})
